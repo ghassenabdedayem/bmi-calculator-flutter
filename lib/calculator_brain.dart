@@ -10,19 +10,15 @@ class CalculatorBrain {
 
   String calculateBMI() {
     _bmi = weight / pow(height/100, 2);
-    print('calculated bmi from inside calculator = $_bmi');
     return _bmi.toStringAsFixed(1);
   }
 
   String getResult () {
     if (_bmi >= 25) {
-      print('Overweight');
       return 'Overweight';
     } else if (_bmi > 18.5) {
-      print('Normal');
       return 'Normal';
     } else {
-      print('Underweight');
       return 'Underweight';
     }
   }

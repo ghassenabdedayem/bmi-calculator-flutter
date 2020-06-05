@@ -15,7 +15,6 @@ class ResultsPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    print('I am in the result page');
     return Scaffold(
       appBar: AppBar(
         title: Text('BMI CALCULATOR'),
