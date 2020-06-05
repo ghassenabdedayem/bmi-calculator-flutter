@@ -218,18 +218,13 @@ class _InputPageState extends State<InputPage> {
                   CalculatorBrain(height: height, weight: weight);
               print('bmi has been calculated');
               print('height: $height ; weight: $weight');
-              String bmi = calc.calculateBMI();
-              print(bmi);
-              String resultat = calc.getResult();
-              String explic = calc.getInterpretation();
-              print('calc = $bmi ; $resultat ; $explic');
               Navigator.push(
                 context,
                 MaterialPageRoute(
                   builder: (context) => ResultsPage(
-                    bmiResult: bmi,
-                    resultText: 'Result Text',
-                    interpretation: 'Interpretation',
+                    bmiResult: calc.calculateBMI(),
+                    resultText: calc.getResult(),
+                    interpretation: calc.getInterpretation(),
                   ),
                 ),
               );
