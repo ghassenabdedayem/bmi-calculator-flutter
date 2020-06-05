@@ -14,3 +14,30 @@ const kValueTextStyle = TextStyle(
   fontSize: 50.0,
   fontWeight: FontWeight.w900
 );
+
+const kLargeTextStyle = TextStyle(
+  fontSize: 27,
+  fontWeight: FontWeight.w500,
+  color: Colors.white,
+);
+
+const kTitleTextStyle = TextStyle(
+  fontWeight: FontWeight.bold,
+  fontSize: 50.0,
+);
+
+const kResultTextStyle = TextStyle(
+  color: Color(0xFF24D876),
+  fontSize: 22.0,
+  fontWeight: FontWeight.bold,
+);
+
+const kBMITextStyle = TextStyle(
+  fontWeight: FontWeight.bold,
+  fontSize: 100.0,
+  color: Colors.white,
+);
+
+const kBodyTextStyle = TextStyle(
+  fontSize: 22.0
+);
